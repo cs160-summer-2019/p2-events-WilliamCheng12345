@@ -12,6 +12,7 @@
 	<script src="{% static '/vendors/jquery/jquery-3.3.1.min.js' %}"></script>
 	<script src="{% static '/vendors/jquery-ui/jquery-ui.min.js' %}"></script>
 
+  
 </head>
 
 <body>
@@ -64,7 +65,24 @@
 
 <script type="text/javascript">
 	// your solution here
-
+$(document).ready(function(){
+  $(".bg-purple").click(function(){
+    $(".bg-purple").hide();
+  });
+  $(".bg-green").click(function(){
+    $(".bg-blue").hide();
+    $(".bg-green").hide(); 
+  });
+  $("#gradient-circle").mouseover(function(){
+    $("#gradient-circle").hide();
+  });
+  $(".bg-orange.p2-border").click(function(){
+    $(".bg-orange.p2-border").hide();
+  });
+  $(".btn").click(function(){
+    $("div").show();
+  });
+});
 </script>
 </body>
 </html>
